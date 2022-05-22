@@ -9,7 +9,8 @@ class Item:
         assert price >= 0, f"Price {price} is not non-negative"
         assert quantity >= 0, f"Quantity {quantity} is not non-negative"
 
-        self.name = name
+        # private attribute
+        self.__name = name
         self.price = price
         self.quantity = quantity
 
